@@ -11,6 +11,7 @@ list1 = ["a","b","c"]
 list2= ["c","d","f"]
 switch = 0
 
+
 while continuar: 
 
 
