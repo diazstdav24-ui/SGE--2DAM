@@ -131,34 +131,27 @@ int_values = [int(value) for value in values.split( , )]
 int_values = [int(v) for v in values.split( , ) if v.startswith( 4 )]
 ```
 
+# Listas bidireccionales 
+
+`team[1][2]` --> selecciona el indice 1 de la lista y dentro de la lista del indice 1 selecciona el indice 2
+
+`Team[3]` --> Selecciona solo una 
+
+# Tuplas 
+
+Son inmutables y ocupan menos espacios que las listas 
+
+## Tuplas vs Listas
+Aunque puedan parecer estructuras de datos muy similares, sabemos que las tuplas carecen de
+ciertas operaciones, especialmente las que tienen que ver con la modificación de sus valores,
+ya que no son inmutables. Si las listas son más flexibles y potentes, ¿por qué íbamos a
+necesitar tuplas? Veamos 4 potenciales ventajas del uso de tuplas frente a las listas:
+1. Las tuplas ocupan menos espacio en memoria.
+2. En las tuplas existe protección frente a cambios indeseados.
+3. Las tuplas se pueden usar como claves de diccionarios (son «hashables»).
+4. Las namedtuples son una alternativa sencilla a los objetos.
+
+nameTuplas: son objetos, pero sin tener que ser objetos
+
 endº
 
-## Comparar listas:
-
-Comparar listas es raro así que hay que tener cuidado
-
-## Cuidado con las copias:
-
-Las listas son estructuras de datos mutables y esta característica nos obliga a tener cuidado
-cuando realizamos copias de listas, ya que la modificación de una de ellas puede afectar a la
-otra.
-Veamos un ejemplo sencillo:
-
-```python
-original_list = [4, 3, 7, 1]
-copy_list = original_list
-original_list[0] = 15
-original_list
-[15, 3, 7, 1]
-copy_list
-[15, 3, 7, 1]
-```
-
-Una posible solución a este problema es hacer una «copia dura». Para ello Python
-proporciona la función copy()
-
-```python
-copy_list = original_list.copy()
-```
-
-## Listas por comprensión
