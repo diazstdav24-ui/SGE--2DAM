@@ -51,7 +51,7 @@ while continuar:
                 cont += 1
 
         case 2: 
-
+            #Hacer los calculos a la vez que lo muestras, para evitar problemas con datos antiguos 
             print(f'La media es: {media:.2f}')
 
         case 3: 
