@@ -2,7 +2,7 @@ def factorial(n):
     if n < 0:
         raise ValueError("El factorial no está definido para números negativos")
 
-    resultado = 1
+    resultado = 
     for i in range(2, n + 1):
         resultado *= i
     return resultado
